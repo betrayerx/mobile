@@ -1,0 +1,21 @@
+body
+	{
+	background-image: url("stena.jpg");
+	background-repeat: repeat;
+	background-attachment: scroll;
+	background-position: top left;
+	}
+div#all
+	{
+	padding-top:50%;
+	}
+p
+	{
+	font-weight:600;
+	}
+
+/* #error
+	{
+	color: red;
+	font-variant: small-caps;
+	} */
