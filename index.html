@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru"><head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Хостинг картинок Черная магия и Руны</title>
+<link rel="stylesheet" href="./bootst/css/bootstrap.min.css">
+<link rel="stylesheet" href="./style.css">
+<body>
+<script type="text/javascript">
+function link_form()
+{
+document.getElementById("main").style.display="none";
+var link = document.getElementById('linkForm');
+link.style.visibility='visible';
+link.style.display = "";
+
+return;
+}
+
+function file_form()
+{
+document.getElementById("main").style.display="none";
+var file = document.getElementById('fileForm');
+file.style.visibility='visible';
+file.style.display = "";
+
+return;
+}
+
+function dloa2d_file()
+{
+var a = document.getElementById("img");
+alert(a.value);
+return false;
+}
+
+function dload_file()
+{
+var a = document.getElementById("img");
+if (a.value == "")
+	{
+	document.getElementById("error").style.display = "";
+	document.getElementById("errtext").innerHTML = "Не выбран файл!";
+	return false;
+	}
+else
+	{return true;}
+}
+</script>
+</head>
+<body>
+
+<div class="container" id="all">
+<div id="main">
+	<p class="text-center">Выберите вариант размещения картинки:</p>
+<p class="text-center">
+<button type="button" class="btn btn-primary" onclick="link_form();">Вставить ссылку</button>
+<button type="button" class="btn btn-primary" onclick="file_form();">Загрузить файл</button>
+</p>
+	</div>
+	
+
+	<div id="linkForm" style="display:none">
+	<fieldset>
+	<legend><b>Вставьте ссылку в текстовое поле и нажмите "загрузить"</b></legend>
+	<form method="post" role="form">
+	  <div class="form-group">
+		<input type="text" name="linkPath" id="linkPath" class="form-control">
+	  </div>
+	  <div class="form-group">
+		<input type="submit" class="btn btn-primary btn-lg btn-block" value="Загрузить" class="text-center">
+	  </div>	
+	</form></fieldset>
+	</div>
+
+	<div id="fileForm" name="fileForm1" style="display:none">
+	<fieldset>
+	<legend><b>Нажмите <u>обзор</u>, выберите файл и нажмите <u>загрузить</u></b></legend>
+	<form method="post" enctype="multipart/form-data" action="" onsubmit="return dload_file();"	role="form">
+	<input type="hidden" name="MAX_FILE_SIZE" value="1048576">
+	  <div class="form-group">
+		<input type="file" name="img" id="img">
+	   </div>	
+	 <div class="form-group">
+		<input type="submit" value="загрузить"  class="btn btn-primary btn-lg btn-block" >
+       </div>
+	</form></fieldset>
+	</div>
+</div>
+
+<div class="container-fluid">
+<div id="format" align="center" class="jumbotron">
+<!--Поддерживаемые форматы: .jpg .jpeg .png .gif-->
+Поддерживаемые форматы: jpg, png, gif
+<br>Максимальный размер - 1mb.<br>
+
+<a href="javascript:document.location.href=document.location.href;" title="Нажмите, чтобы начать все сначала">Вернуться назад</a>
+</div></div>
+
+<div id="error" style="display:none">
+<p class="bg-warning text-center">
+Ошибка
+</p>
+<p id="errtext" class="text-danger text-center">
+</p>
+</div>
+
+
+</body></html>
