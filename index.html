@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru"><head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Хостинг картинок Черная магия и Руны</title>
+<title>РҐРѕСЃС‚РёРЅРі РєР°СЂС‚РёРЅРѕРє Р§РµСЂРЅР°СЏ РјР°РіРёСЏ Рё Р СѓРЅС‹</title>
 <link rel="stylesheet" href="./bootstrap.min.css">
 <link rel="stylesheet" href="./style.css">
-<body>
 <script type="text/javascript">
 function link_form()
 {
@@ -39,7 +38,7 @@ var a = document.getElementById("img");
 if (a.value == "")
 	{
 	document.getElementById("error").style.display = "";
-	document.getElementById("errtext").innerHTML = "Не выбран файл!";
+	document.getElementById("errtext").innerHTML = "РќРµ РІС‹Р±СЂР°РЅ С„Р°Р№Р»!";
 	return false;
 	}
 else
@@ -51,37 +50,37 @@ else
 
 <div class="container" id="all">
 <div id="main">
-	<p class="text-center">Выберите вариант размещения картинки:</p>
+	<p class="text-center">Р’С‹Р±РµСЂРёС‚Рµ РІР°СЂРёР°РЅС‚ СЂР°Р·РјРµС‰РµРЅРёСЏ РєР°СЂС‚РёРЅРєРё:</p>
 <p class="text-center">
-<button type="button" class="btn btn-primary" onclick="link_form();">Вставить ссылку</button>
-<button type="button" class="btn btn-primary" onclick="file_form();">Загрузить файл</button>
+<button type="button" class="btn btn-primary" onclick="link_form();">Р’СЃС‚Р°РІРёС‚СЊ СЃСЃС‹Р»РєСѓ</button>
+<button type="button" class="btn btn-primary" onclick="file_form();">Р—Р°РіСЂСѓР·РёС‚СЊ С„Р°Р№Р»</button>
 </p>
 	</div>
 	
 
 	<div id="linkForm" style="display:none">
 	<fieldset>
-	<legend><b>Вставьте ссылку в текстовое поле и нажмите "загрузить"</b></legend>
+	<legend><b>Р’СЃС‚Р°РІСЊС‚Рµ СЃСЃС‹Р»РєСѓ РІ С‚РµРєСЃС‚РѕРІРѕРµ РїРѕР»Рµ Рё РЅР°Р¶РјРёС‚Рµ "Р·Р°РіСЂСѓР·РёС‚СЊ"</b></legend>
 	<form method="post" role="form">
 	  <div class="form-group">
 		<input type="text" name="linkPath" id="linkPath" class="form-control">
 	  </div>
 	  <div class="form-group">
-		<input type="submit" class="btn btn-primary btn-lg btn-block" value="Загрузить" class="text-center">
+		<input type="submit" class="btn btn-primary btn-lg btn-block" value="Р—Р°РіСЂСѓР·РёС‚СЊ" class="text-center">
 	  </div>	
 	</form></fieldset>
 	</div>
 
 	<div id="fileForm" name="fileForm1" style="display:none">
 	<fieldset>
-	<legend><b>Нажмите <u>обзор</u>, выберите файл и нажмите <u>загрузить</u></b></legend>
+	<legend><b>РќР°Р¶РјРёС‚Рµ <u>РѕР±Р·РѕСЂ</u>, РІС‹Р±РµСЂРёС‚Рµ С„Р°Р№Р» Рё РЅР°Р¶РјРёС‚Рµ <u>Р·Р°РіСЂСѓР·РёС‚СЊ</u></b></legend>
 	<form method="post" enctype="multipart/form-data" action="" onsubmit="return dload_file();"	role="form">
 	<input type="hidden" name="MAX_FILE_SIZE" value="1048576">
 	  <div class="form-group">
 		<input type="file" name="img" id="img">
 	   </div>	
 	 <div class="form-group">
-		<input type="submit" value="загрузить"  class="btn btn-primary btn-lg btn-block" >
+		<input type="submit" value="Р·Р°РіСЂСѓР·РёС‚СЊ"  class="btn btn-primary btn-lg btn-block" >
        </div>
 	</form></fieldset>
 	</div>
@@ -89,16 +88,16 @@ else
 
 <div class="container-fluid">
 <div id="format" align="center" class="jumbotron">
-<!--Поддерживаемые форматы: .jpg .jpeg .png .gif-->
-Поддерживаемые форматы: jpg, png, gif
-<br>Максимальный размер - 1mb.<br>
+<!--РџРѕРґРґРµСЂР¶РёРІР°РµРјС‹Рµ С„РѕСЂРјР°С‚С‹: .jpg .jpeg .png .gif-->
+РџРѕРґРґРµСЂР¶РёРІР°РµРјС‹Рµ С„РѕСЂРјР°С‚С‹: jpg, png, gif
+<br>РњР°РєСЃРёРјР°Р»СЊРЅС‹Р№ СЂР°Р·РјРµСЂ - 1mb.<br>
 
-<a href="javascript:document.location.href=document.location.href;" title="Нажмите, чтобы начать все сначала">Вернуться назад</a>
+<a href="javascript:document.location.href=document.location.href;" title="РќР°Р¶РјРёС‚Рµ, С‡С‚РѕР±С‹ РЅР°С‡Р°С‚СЊ РІСЃРµ СЃРЅР°С‡Р°Р»Р°">Р’РµСЂРЅСѓС‚СЊСЃСЏ РЅР°Р·Р°Рґ</a>
 </div></div>
 
 <div id="error" style="display:none">
 <p class="bg-warning text-center">
-Ошибка
+РћС€РёР±РєР°
 </p>
 <p id="errtext" class="text-danger text-center">
 </p>
